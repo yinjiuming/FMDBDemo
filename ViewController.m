@@ -56,14 +56,13 @@
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [_name resignFirstResponder];
+    [_sex resignFirstResponder];
     [_age resignFirstResponder];
 
 }
 
-- (void)alertViewCancel:(UIAlertView *)alertView{
-         
-    
-}
+
 
 //数据查询
 - (IBAction)queryDate:(id)sender {
